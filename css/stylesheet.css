@@ -5,7 +5,7 @@
 
 1. Body
 2. Navigation
-3. Slider
+3. Slider.dark-grey-1
 4. Inner Pages Banner
 5. Breadcrumb
 6. Under Banner Strip
@@ -189,8 +189,32 @@ body {
     background-color: transparent;
     /* border-bottom: 4px solid #1086df; */
 }
+.nav>li{
+    height: 60px;
+}
+
+.dropdown-menu{
+    min-width: 0px !important;
+    padding:0 !important;
+    margin:0 !important;
+}
+#ulIndex{width: 93px;}
+
+#ulIndex > li{
+    height: 40px;
+}
+#ulIndex>li>a{
+    height: 40px;
+    line-height: 35px;
+}
+
+.navbar-nav>li>a{
+    height: 60px;
+}
+
 .navbar-nav>li>a {
-    padding-top: 32px;
+    /*padding-top: 32px;*/
+    padding-top: 20px;
     padding-bottom: 32px;
     text-transform: uppercase;
     color: #222222;
@@ -1111,10 +1135,11 @@ ul.vertical-images li:hover .button {
 
 #otherdescription1,#otherdescription2,#otherdescription3,#otherdescription4{
     position: absolute;
-    bottom: .5rem;
-    background-color:black;
-    left: 2.7rem;
+    bottom: .4rem;
+    background-color: black;
+    left: 5.5%;
     opacity: 0.65;
+    width: 89%;
 }
 
 @keyframes rightEaseInAnimate{/*定义从右边滑入文字的动画*/
@@ -7278,8 +7303,8 @@ footer .white-row ul.social-icons li:hover {
 
 .dark-grey-1 {
     background-color: #626262;
-    border-bottom: 3px black solid;
-} 
+    border-bottom: .1rem #121215 solid;
+}
 footer .line {
     border-top: 1px solid #444444;
 }
