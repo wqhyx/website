@@ -1335,10 +1335,15 @@ ul.vertical-images li:hover .button {
 }
 
 #newss{
-    height: 5rem;
+    height: 3rem;
     width: 30rem;
     margin: 5rem auto;
     text-align: center
+}
+
+.new-xq-img{
+    height: auto;
+    width: 750px;
 }
 
 .new-title:first-child{
@@ -1379,7 +1384,7 @@ ul.vertical-images li:hover .button {
 
 #newss-list ul li div img{
     width: 100px;
-    height: 60px;
+    height: 90px;
 }
 
 .newss-timess{

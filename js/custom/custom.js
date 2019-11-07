@@ -456,11 +456,11 @@ $(document).ready(function() {
     $('.new-title').eq(0).on('click',()=>{
         //alert('第一个');
         $(".new-title").eq(0).css({"color":"white","background-color":"#1B87F4"});
-        $(".new-title").eq(1).css({"color":"black","background-color":"white"});
+        $(".new-title").eq(1).css({"color":"black","background-color":"transparent"});
         $("#newsSecond").hide();$("#newsFirst").show();
     })
     $('.new-title').eq(1).on('click',()=>{
-        $(".new-title").eq(0).css({"color":"black","background-color":"white"});
+        $(".new-title").eq(0).css({"color":"black","background-color":"transparent"});
         $(".new-title").eq(1).css({"color":"white","background-color":"#1B87F4"});
         $("#newsSecond").show();$("#newsFirst").hide();
     })
