@@ -741,7 +741,7 @@ var mid = (e) =>{
 //上一个(傻瓜式)
 var first = (e) => {
     var _thos = e.src;
-    if(_thos.includes(0)){   
+    if(_thos.includes(0)){
         $("#lb-ul li").eq(0).find('img').attr("src","images/gs/lb1.png");
         $("#lb-ul li").eq(1).find('img').attr("src","images/gs/lb2.png");
         $("#lb-ul li").eq(2).find('img').attr("src","images/gs/lb0.png");
