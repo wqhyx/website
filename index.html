@@ -369,10 +369,6 @@
 		<script src="font/tuxsudo.min.js"></script>
 		<script src="font/jquery-letterfx.js"></script>
 		<script src="font/demo.js"></script>
-		<script>
-			//定时切换
-			setInterval(()=>{ previousImg();},3500);
-		</script>
 		<script src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
 		<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script> 
@@ -498,5 +494,8 @@
 		<script src="js/waypoints.min.js"></script>		
 		<script src="js/jquery.counterup.min.js"></script>
 		<script src="js/custom/custom.js"></script>
+		<script>  //定时切换 //定时
+			$(function(){ setInterval(()=>{ nextImg();},3500);})
+		</script>
 	</body>
 </html>
