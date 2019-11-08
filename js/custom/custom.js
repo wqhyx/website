@@ -712,7 +712,7 @@ var ttout4 = () =>{
 
 
 var list = [0,1,2];
-var list = ['ODR智能矛盾纠纷多元化解平台','智慧信访应用平台','大数据 "数据综合治理" 平台'];
+var list = ['ITIL运维管理平台','智慧信访应用平台','大数据 "数据综合治理" 平台'];
 
 // 3
 var mid = (e) =>{
@@ -859,7 +859,7 @@ $('#block1').mouseenter(function(){
     //console.log('进入')
     $(".otherdescriptions1").css({ animation:"rightEaseInAnimate 1s ease 1"});
     $("#otherdescription1 div").eq(0).stop().animate({"margin-top":'25%'});
-    $("#otherdescription1").stop().animate({"height":'97%',"font-weight":"600"});
+    $("#otherdescription1").stop().animate({"height":'100%',"font-weight":"600"});
     $("#otherdescription1").css({"text-align":"center"});
     // $(".otherdescriptions1").css({position: "relative",  "animation-name":"rightEaseInAnimate, rightEaseInAnimate1",
     //     "animation-duration":"5s","animation-iteration-count":"infinite"});
@@ -877,7 +877,7 @@ $('#block2').mouseenter(function(){
     //console.log('进入')
     $(".otherdescriptions2").css({ animation:"rightEaseInAnimate 1s ease 1"});
     $("#otherdescription2 div").eq(0).stop().animate({"margin-top":'25%'});
-    $("#otherdescription2").stop().animate({"height":'97%',"font-weight":"600"});
+    $("#otherdescription2").stop().animate({"height":'100%',"font-weight":"600"});
     $("#otherdescription2").css({"text-align":"center"});
 });
 
@@ -893,7 +893,7 @@ $('#block3').mouseenter(function(){
     //console.log('进入')
     $(".otherdescriptions3").css({ animation:"rightEaseInAnimate 1s ease 1"});
     $("#otherdescription3 div").eq(0).stop().animate({"margin-top":'25%'});
-    $("#otherdescription3").stop().animate({"height":'97%',"font-weight":"600"});
+    $("#otherdescription3").stop().animate({"height":'100%',"font-weight":"600"});
     $("#otherdescription3").css({"text-align":"center"});
 });
 
@@ -909,7 +909,7 @@ $('#block4').mouseenter(function(){
     //console.log('进入')
     $(".otherdescriptions4").css({ animation:"rightEaseInAnimate 1s ease 1"});
     $("#otherdescription4 div").eq(0).stop().animate({"margin-top":'25%'});
-    $("#otherdescription4").stop().animate({"height":'97%',"font-weight":"600"});
+    $("#otherdescription4").stop().animate({"height":'100%',"font-weight":"600"});
     $("#otherdescription4").css({"text-align":"center"});
 });
 

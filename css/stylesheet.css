@@ -776,6 +776,7 @@ ul.vertical-images li:hover .button {
 
 #imgHeight1,#imgHeight2,#imgHeight3,#imgHeight4{
     height: 270px;
+    width: 435px;
 }
 
 #news-look,#news-look2,#news-look3,#news-look4{
@@ -979,6 +980,7 @@ ul.vertical-images li:hover .button {
     float: right;
     overflow: hidden;
     width: 340px;
+    height: 195px;
 }
 
 .solu-p{
@@ -1174,7 +1176,7 @@ ul.vertical-images li:hover .button {
 
 #otherdescription1,#otherdescription2,#otherdescription3,#otherdescription4{
     position: absolute;
-    bottom: .4rem;
+    bottom: .1rem;
     background-color: black;
     left: 5.5%;
     opacity: 0.65;
@@ -1248,19 +1250,19 @@ ul.vertical-images li:hover .button {
 
 #lb-ul li{
     float:left;
-    margin-left: -250px;
+    margin-left: -270px;
     cursor: pointer;
 }
 
 .next-img1{
     position: absolute;
     cursor: pointer;
-    margin-left: 5rem;
+    margin-left: 2rem;
     margin-top: 11rem;
 }
 .next-img2{
     position: absolute;cursor: pointer;
-    margin-left: -18rem;
+    margin-left: -15rem;
     margin-top: 10rem;
 }
 
@@ -1295,10 +1297,10 @@ ul.vertical-images li:hover .button {
 }
 
 #other-li{
-    width:680px;
-    margin-top:-105px;
+    width:720px;
+    margin-top:-95px;
     position: relative;
-    height:440px;
+    height:420px;
 }
 
 #navbar ul li a:hover{
