@@ -16,7 +16,8 @@ $(function(){
       //console.log($(window).scrollTop())
       if ( $(window).scrollTop()>=800 &&  $(window).scrollTop() < 1400 ) {
         if(i == 0){
-          $(".tagline").letterfx({fx:'fall', words:false, timing:100 }); 
+          //$(".tagline").letterfx({fx:'fall', words:false, timing:100 });
+            $(".tx-01").css({ animation:"leftToRight 2s ease 1"});
         } 
         i = i+1;
       }

@@ -712,48 +712,32 @@ var ttout4 = () =>{
 
 
 var list = [0,1,2];
-var list = ['大数据 "数据综合治理" 平台','智慧信访应用平台','大数据存储解决方案'];
-
-// 1
-var previous = (e)=>{
-    var _thos = e.src;
-    if(_thos.includes(1)){
-        window.location.href = "solution-list-01.html";
-    }
-}
-
-// 2
-var next = (e)=>{
-    var _thos = e.src;
-    if(_thos.includes(1)){
-        window.location.href = "solution-list-01.html";
-    }
-}
+var list = ['ODR智能矛盾纠纷多元化解平台','智慧信访应用平台','大数据 "数据综合治理" 平台'];
 
 // 3
 var mid = (e) =>{
-    var _thos = e.src;
-    if(_thos.includes(1)){
-        window.location.href = "solution-list-01.html";
-    }
+    var temp = e.src;
+    if(temp.includes('lb0.png')){ window.location.href = 'solution-list-02.html';}
+    else if(temp.includes('lb1.png')){ window.location.href = 'solution-list-01.html';}
+    else if(temp.includes('lb2.png')){ window.location.href = 'solution-list-04.html';}
 }
 
 //上一个(傻瓜式)
 var first = (e) => {
     var _thos = e.src;
-    if(_thos.includes(0)){
+    if(_thos.includes('lb0.png')){
         $("#lb-ul li").eq(0).find('img').attr("src","images/gs/lb1.png");
         $("#lb-ul li").eq(1).find('img').attr("src","images/gs/lb2.png");
         $("#lb-ul li").eq(2).find('img').attr("src","images/gs/lb0.png");
         $("#fspans").text(list[1]);$("#sspans").text(list[2]);$("#tspans").text(list[0]);
     }
-    if(_thos.includes(1)){  
+    if(_thos.includes('lb1.png')){
         $("#lb-ul li").eq(0).find('img').attr("src","images/gs/lb2.png");
         $("#lb-ul li").eq(1).find('img').attr("src","images/gs/lb0.png");
         $("#lb-ul li").eq(2).find('img').attr("src","images/gs/lb1.png");
         $("#fspans").text(list[2]);$("#sspans").text(list[0]);$("#tspans").text(list[1]);
     }
-    if(_thos.includes(2)){  
+    if(_thos.includes('lb2.png')){
         $("#lb-ul li").eq(0).find('img').attr("src","images/gs/lb0.png");
         $("#lb-ul li").eq(1).find('img').attr("src","images/gs/lb1.png");
         $("#lb-ul li").eq(2).find('img').attr("src","images/gs/lb2.png");
@@ -764,19 +748,19 @@ var first = (e) => {
 // 下一个 (傻瓜式)
 var second = (e) =>{
     var _thos = e.src;
-    if(_thos.includes(2)){   
+    if(_thos.includes('lb2.png')){
         $("#lb-ul li").eq(0).find('img').attr("src","images/gs/lb2.png");
         $("#lb-ul li").eq(1).find('img').attr("src","images/gs/lb0.png");
         $("#lb-ul li").eq(2).find('img').attr("src","images/gs/lb1.png");
         $("#fspans").text(list[2]);$("#sspans").text(list[0]);$("#tspans").text(list[1]);
     }
-    if(_thos.includes(1)){  
+    if(_thos.includes('lb1.png')){
         $("#lb-ul li").eq(0).find('img').attr("src","images/gs/lb1.png");
         $("#lb-ul li").eq(1).find('img').attr("src","images/gs/lb2.png");
         $("#lb-ul li").eq(2).find('img').attr("src","images/gs/lb0.png");
         $("#fspans").text(list[1]);$("#sspans").text(list[2]);$("#tspans").text(list[0]);
     }
-    if(_thos.includes(0)){   
+    if(_thos.includes('lb0.png')){
         $("#lb-ul li").eq(0).find('img').attr("src","images/gs/lb0.png");
         $("#lb-ul li").eq(1).find('img').attr("src","images/gs/lb1.png");
         $("#lb-ul li").eq(2).find('img').attr("src","images/gs/lb2.png");

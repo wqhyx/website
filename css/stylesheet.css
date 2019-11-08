@@ -1192,6 +1192,20 @@ ul.vertical-images li:hover .button {
     }
 }
 
+@keyframes leftToRight {
+    0%{
+        transform:translateX(-150px);opacity: 1;
+    }
+    100%{
+        transform:translateX(0px);opacity: 1;
+    }
+}
+
+.somg-typ{
+    padding-top:30px !important;
+    padding-bottom:30px !important;
+}
+
 @keyframes rightEaseInAnimate1{
     50%{
         top: 100px;
