@@ -717,7 +717,7 @@ var list = ['ITIL运维管理平台','智慧信访应用平台','大数据 "数�
 // 3
 var mid = (e) =>{
     var temp = e.src;
-    if(temp.includes('lb0.png')){ window.location.href = 'solution-list-02.html';}
+    if(temp.includes('lb0.png')){ window.location.href = 'solution-list-03.html';}
     else if(temp.includes('lb1.png')){ window.location.href = 'solution-list-01.html';}
     else if(temp.includes('lb2.png')){ window.location.href = 'solution-list-04.html';}
 }
