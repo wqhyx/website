@@ -1254,6 +1254,19 @@ ul.vertical-images li:hover .button {
     cursor: pointer;
 }
 
+.head-img{
+    height: 60px;
+    line-height: 60px;
+}
+
+#isIponeDiv{
+    text-align:left;
+}
+
+#isIponeDiv .line{
+    margin-left:0;
+}
+
 .next-img1{
     position: absolute;
     cursor: pointer;
@@ -1352,7 +1365,7 @@ ul.vertical-images li:hover .button {
 
 #newss{
     height: 3rem;
-    width: 30rem;
+    width: 26rem;
     margin: 5rem auto;
     text-align: center
 }

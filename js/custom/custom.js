@@ -610,8 +610,124 @@ $(document).ready(function() {
     //         }
     //     }
     // });
-    
+
+    //查看是不是手机访问，兼容苹果，安卓
+    isIphoneMethod();
 });
+
+var isIphoneMethod =()=>{
+    var ua = navigator.userAgent;
+    var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+        isIphone =!ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+        isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+        isMobile = isIphone || isAndroid;
+    //判断
+    if(isMobile){
+        //console.log('是');
+        //需要做调整的样式
+        //首页
+        $(".textCol-id").css({"font-size":"25px"});
+        $("#isIponeDiv").css("cssText","text-align: center !important;");
+        $('#isIponeDiv > .line').css("cssText","margin-left:auto !important;");
+        $("#zjbg .container").css("cssText","font-size:2rem !important;color:black;text-align:center;");
+        $("#zjbg").css({"height":"100px","line-height":"0"});
+        $("#isIponeGrid").css({"padding-bottom":"20px"});
+        $("#isIponeText").css("cssText","font-size:12px;");
+        $("#isIphonecontainer").css("cssText","padding-left:0 !important;");
+        $("#isIphonemar").css({"margin-left":"0","margin-bottom":"20px"});
+        $("#imgHeight1,#imgHeight2").css({"width":"105%","height":"230px"});
+        $("#otherdescription1, #otherdescription2").css({"left":"0","width":"100%"});
+        $("#isIponeFooter").css({"width":"auto"});
+        $("#isIponetxt2,#isIponetxt1").css("font-size","35px");
+        $(".ztwxCla").css({"margin-left":"0"});$("#ulli-d").css("margin-left","-2rem");
+        $("#isIponeFooterOther").css({"padding-top":"30px","padding-bottom":"20px"});
+
+        //首页轮播
+        $("#isPhoneLb").css({"width":"auto","margin-left":"10px","padding-bottom":"0"});
+        $("#lb-ul li").css("margin-left","-100px");
+        $("#lb-ul li img").css({"height":"100px","width":"180px"});
+        $("#other-li").css({"height":"120px","margin-top":"-15px"});
+        $(".isphonedescription").css("padding-bottom","0");
+        $(".next-img1").css({"margin-left":"0","margin-top":"3rem","width":"50px"});
+        $(".next-img2").css({"margin-left":"-5rem","margin-top":"2rem","width":"50px"});
+        $(".isphone-bb").css({"padding-bottom":"10px"});
+
+        //新闻 AND 详情
+        $(".isIphoneImgNews").css("width","100%");
+        $(".isIpsidebar").css("padding-bottom","15px");
+        $(".isIphoneNewXQ").css({"float":"right","position":"absolute","width":"245px","margin-top":"0","right":"0","top":"4rem"})
+        $("#news-bg").css("height","150px");
+        $("#news-bg .cen-ttt .info").css({"padding-top":"30px","padding-bottom":"0"});
+        $("#news-bg .cen-ttt").css("margin-top","2rem");
+        $("#news-bg .cen-ttt h2").css("font-size","20px");
+        $(".isNews-c").css("cssText","padding-top:50px !important");
+        $(".isNews-x").css("padding-bottom","0")
+        $("#newss").css("margin","2rem auto");
+        $("#newsFirst").css("cssText","padding-top:10px;padding-bottom:0");
+        $("#newsSecond").css("cssText","padding-top:10px;padding-bottom:0;display:none;");
+        $(".new-times").css("cssText","bottom:-2rem");
+
+        //联系我们
+        $("#contact-us").css("height","150px");
+        $("#contact-us .cen-ttt .info").css({"padding-top":"30px","padding-bottom":"0"});
+        $("#contact-us .cen-ttt").css("margin-top","2rem");
+        $("#contact-us .cen-ttt h2").css("font-size","20px");
+        $(".our-information").css({"padding-top":"20px","padding-right":"0","padding-bottom":"0"});
+
+        //服务与支持
+        $(".container-fluid").css({"padding-left":"0","margin-left":"0","padding-right":"0","margin-right":"0"});
+        $(".container-fluid .col-lg-12").css({"padding-left":"0","margin-left":"0","padding-right":"0"});
+        $("#hzhb-center ul").css({"width":"500px"});
+        $(".home-our-services").css({"margin-bottom":"20px"});
+        $(".isIphone-no-gutter").css("margin-left","-12%");
+        $("#support-bg").css("height","150px");
+        $("#support-bg .cen-ttt .info").css({"padding-top":"30px","padding-bottom":"0"});
+        $("#support-bg .cen-ttt").css("margin-top","2rem");
+        $("#support-bg .cen-ttt h2").css("font-size","20px");
+        $(".isIphone-hero-text").css("padding-bottom","60px");
+        $(".isPhone-offer-02").css("margin-left","0");$(".texts-img").css({"width":"55px","height":"55px"})
+        $("#fwlc ul").css("width","420px");
+        $("#support-bigbg").css({"height":"500px","margin-left":"0"});
+        $(".fwlcNew1").css("cssText","margin-left:0 !important");
+
+
+        //解决方案 -- 详情
+        $("#solution-bg").css("height","150px");
+        $("#solution-bg .cen-ttt .info").css({"padding-top":"30px","padding-bottom":"0"});
+        $("#solution-bg .cen-ttt").css("margin-top","2rem");
+        $("#solution-bg .cen-ttt h2").css("font-size","16px");
+        $(".isPhonehome-04").css({"padding-top":"20px","padding-bottom":"20px"});
+        $(".isPhonehome-04 .solu-images").css({"width":"326px"});
+        $(".isPhone-why-to").css({"padding-top":"30px"});
+        $(".isPhone-t-1").css({"padding-top":"0"});
+        $(".isPhone-t-1 .col-lg-6").css({"top":"0"});
+        //$("#fwlc").css({"height":"520px","margin-left":"-10%"});
+        $(".fwlcNew2").css({"height":"520px","margin-left":"-10%"});
+        $("#fwlc ul li").eq(2).css({"margin-top":"30px"});
+        $("#fwlc ul li").eq(3).css({"margin-top":"30px"});
+        $(".phoneIsSo").css("left","20px");
+        $(".phoneIsSo .col-lg-2").css({"width":"180px","float":"left"})
+
+        //关于我们
+        $("#about-bg").css("height","150px");
+        $("#about-bg .cen-ttt .info").css({"padding-top":"30px","padding-bottom":"0"});
+        $("#about-bg .cen-ttt").css("margin-top","2rem");
+        $("#about-bg .cen-ttt h2").css("font-size","20px");
+        $(".isPhone-t-1 .col-lg-4").css("padding-top","180px");
+        $(".isPhone-t-1 .col-lg-4").eq(0).css("padding-top","0");
+        $("#aboutUsSecond .solu-images").css({"width":"327px"});
+        $(".panel-group .panel").css("width","300px");
+        $(".istelmd-3").css({"margin-right":"10%","margin-left":"-20%"});
+        $(".istelmd-9").css({"margin-left":"-17%"});
+
+        //关于我们详情
+        $("#about-us-bg").css("height","150px");
+        $("#about-us-bg .cen-ttt .info").css({"padding-top":"30px","padding-bottom":"0"});
+        $("#about-us-bg .cen-ttt").css("margin-top","2rem");
+        $("#about-us-bg .cen-ttt h2").css("font-size","20px");
+
+    }else{ console.log('不是的咯===>'); }
+}
 
 // 预存阀值  ------
 var defaultNum = 1;

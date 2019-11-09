@@ -4,15 +4,23 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>中天网信</title>
+		<title>武汉中天网信科技有限公司</title>
 		<link href="css/all-stylesheets.css" rel="stylesheet">
 		<link rel="icon" type="image/png" sizes="144x144" href="images/gs/logo.png"/>
 		<link rel="apple-touch-icon" type="image/png" sizes="144x144" href="images/gs/logo.png"/>
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-default">
 			<div class="container">
-				<div class="navbar-header" style="margin: .5rem 0 0 0;">
+				<div class="navbar-header head-img">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 					<a href="index.html"><img src="images/gs/gsmc.png" alt=""></a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
@@ -251,20 +259,20 @@
 			</div>
 		</div>
 
-		<div class="why-to-choose-us-01" style="padding-bottom:50px;">
+		<div class="why-to-choose-us-01" style="padding-bottom:50px;padding-top:30px;">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-md-6">
-						<div class="hero-text center" style="text-align:left;">
-							<h1 id="textCol">COMPANY PROFILE</h1>
+						<div class="hero-text center" id="isIponeDiv">
+							<h1 id="textCol" class="textCol-id">COMPANY PROFILE</h1>
 							<h1>公司简介</h1>
-							<div class="line" style="margin-left:0"></div>
+							<div class="line"></div>
 						</div>
 						<!-- tagline  tx-01 -->
 						<div class="description" style="font-size: 16px;line-height: 3rem;margin-top: -3rem;">
 							武汉中天网信科技有限公司是国内领先的产业互联网和大数据综合解决方案提供商，公司长期致力于自主创新的软件开发，为政府和公安行业提供最佳的信息系统解决方案，是国内领先的软件产品和服务供应商，自1999年开始，武汉中天网信从创立之初就进入公安和交通行业，开始提供行业应用软件产品和服务，在行业应用软件领域，已拥有新一代大数据标准化解决方案、视频大数据展示平台、信访信息系统等基础行业类和综合应用类软件产品，目前被评为武汉市双软企业，是武汉市软件行业协会成员单位。
 						</div>
-						<div>
+						<div style="padding-bottom:20px;">
 							<a href="aboutUs.html"><button id="ljgd" style="font-size:16px;">了解更多</button></a>
 						</div>
 					</div>
@@ -273,65 +281,60 @@
 			</div>
 		</div> 
 		
-		<div class="why-to-choose-us-01" style="padding-top:0;padding-bottom:50px;">
+		<div class="why-to-choose-us-01 isphone-bb" style="padding-top:0;padding-bottom:50px;">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="hero-text center" style="padding-bottom:20px;">
-							<h1 id="textCol">SOLUTION</h1>
+							<h1 id="textCol" class="textCol-id">SOLUTION</h1>
 							<h1>解决方案</h1>
 							<div class="line"></div>
 						</div>
-						<div class="description " style="font-size: 16px;line-height: 4rem;text-align: center;padding-bottom:100px;">
+						<div class="description isphonedescription" style="font-size: 16px;line-height: 4rem;text-align: center;padding-bottom:100px;">
 							公司的核心业务包括软件产品研发，行业应用解决方案和大数据应用，云服务四大版块，涉及大数据分析应用、网络安全和IT运维管理平台等发展方向。利用当代最前沿的IT技术推动企业和政府部门在商业管理与决策上的创新发展，为其提供综合解决方案，包括运营支撑、大数据、信息系统解决方案等，公司不断拓宽产品线和综合服务能力，已形成跨行业、多盈利模式的业务布局。为公安、交通、高校、金融、企业等多个行业提供领先的产品、技术和解决方案。为了迎接大数据时代的来临，公司近年来加快了大数据终端产品和服务的发展步伐，旨在实现企业的行业应用战略转型和升级。
 						</div>
 					</div>
 				</div><br>
-				<div class="row" style="padding-bottom:20px;margin-left: 38px;width: 1200px;">
+				<div class="row" id="isPhoneLb" style="padding-bottom:20px;margin-left: 38px;width: 1200px;">
 					<img src="images/gs/arrow1.png" class="next-img1" onclick="previousImg(this)">
 					<ul id="lb-ul">
 						<li>
 							<img src="images/gs/lb0.png" class="lb-t lb-t1" draggable="false" onclick="mid(this)" onmousedown="moveprevious(this)">
-							<!-- <div class="lb-t lb-t1" id="other-li1"></div> -->
 						</li>
 						<li>
 							<img src="images/gs/lb1.png" id="other-li" class="lb-t lb-t2" draggable="false" onclick="mid(this)">
-							<!-- <div class="lb-t lb-t2" id="other-li"></div> -->
 						</li>
 						<li>
 							<img src="images/gs/lb2.png" class="lb-t lb-t3" draggable="false" onclick="mid(this)"> <!--onmousedown="movenext(this)"-->
-							<!-- <div class="lb-t lb-t3" id="other-li2"></div> -->
 						</li>
 					</ul>
 					<img src="images/gs/arrow2.png" class="next-img2" onclick="nextImg(this)">
 				</div><br>
-				<div class="row" style="text-align:center;font-size: 26px;">
+				<div class="row" style="text-align:center;font-size: 26px;" id="isIponeText">
 					 <span id="fspans">ITIL运维管理平台&nbsp;</span>&nbsp;—&nbsp; <span style="color:red;" id="sspans">智慧信访应用平台</span> &nbsp;—&nbsp; <span id="tspans">大数据 "数据综合治理" 平台</span>
 				</div>
 			</div>
 		</div>
 
-		<div class="parallax-3 newsletter" id="zjbg" style="height:200px;line-height:70px;">
+		<div class="col-lg-12 col-md-12 parallax-3 newsletter" id="zjbg" style="height:200px;line-height:70px;">
 			<div class="container" style="text-align:center;font-size: 40px;color:black;">
-				 <span>技术为</span><span style="font-size: 60px;color: #fe981b;margin-left:1rem;">本</span><span style="margin-left: 5rem">服务为</span><span style="font-size: 60px;color: #fe981b;margin-left:1rem;">彰</span>
+				 <span>技术为</span><span style="font-size: 60px;color: #fe981b;margin-left:1rem;" id="isIponetxt1">本</span><span style="margin-left: 5rem">服务为</span><span style="font-size: 60px;color: #fe981b;margin-left:1rem;" id="isIponetxt2">彰</span>
 			</div>
 		</div>
 
-
-
-		<div class="blog-grid" style="padding-top:40px;padding-bottom:40px">
-			<div class="container">
+		<div class="blog-grid" id="isIponeGrid" style="padding-top:40px;padding-bottom:40px">
+			<div class="container" id="isIphonecontainer">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="hero-text center">
-							<h1 id="textCol">PRESS CENTER</h1>
+							<h1 id="textCol" class="textCol-id">PRESS CENTER</h1>
 							<h1>新闻中心</h1>
 							<div class="line"></div>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-5 col-md-4 col-sm-6" style="margin-left:8%;">
+					<div class="col-lg-5 col-md-5" id="isIphonemar" style="margin-left:8%;">
 						<div class="block" id="block1">
 							<div class="picture">
 								<a href="news-hy-1.html"><img id="imgHeight1" src="images/gs/news-sy1.png" class="center-block" alt=""></a>
@@ -342,7 +345,7 @@
 							</div></a>
 						</div>
 					</div>
-					<div class="col-lg-5 col-md-4 col-sm-6">
+					<div class="col-lg-5 col-md-5">
 						<div class="block" id="block2">
 							<div class="picture">
 								<a href="news-gs-1.html"><img id="imgHeight2" src="images/gs/news-sy2.png" class="center-block" alt=""></a>
@@ -405,10 +408,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="dark-grey-2 row2">
+			<div class="dark-grey-2 row2" id="isIponeFooterOther">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-6" style="color:white;width: 1100px;text-align: center;">
+						<div class="col-lg-6" id="isIponeFooter" style="color:white;width: 1100px;text-align: center;">
 								版权声明&copyright 武汉中天网信科技有限公司<span style="margin-left:5rem;">备案号：12345677890000</span>
 						</div>
 					</div>
