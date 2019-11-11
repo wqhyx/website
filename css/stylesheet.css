@@ -1225,6 +1225,7 @@ ul.vertical-images li:hover .button {
 .aboutUs-tit-a{
     padding: 4rem 2rem;
     user-select:none;
+    cursor: default !important;
 }
 
 .aboutUs-tit-a div{
@@ -1378,6 +1379,10 @@ ul.vertical-images li:hover .button {
 .new-title:first-child{
     color:white;
     background-color: #1B87F4;
+}
+
+.cuuss-sb{
+    cursor: default !important;
 }
 
 .about-title:first-child{
@@ -4104,7 +4109,9 @@ ul.vertical-images li:hover .button {
 /* ----------------------------------------------------------------------------- ABOUT US 01 ENDS ------------------ */
 
 .block-11{
-    padding-top:25px;border-bottom: 1px solid #ECECEC;
+    padding-top:25px;
+    border-bottom: 1px solid #ECECEC;
+    cursor: default !important;
 }
 
 .block-11:hover{
