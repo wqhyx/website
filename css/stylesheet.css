@@ -4114,6 +4114,8 @@ ul.vertical-images li:hover .button {
     cursor: default !important;
 }
 
+.iii-img{cursor: default !important;}
+
 .block-11:hover{
     background-color: #f3f6f8;
 }
