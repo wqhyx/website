@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>旋转木马轮播图</title>
+    <link rel="stylesheet" href="css.css"/>
+    <script src="common.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        //
+        var config = [
+            
+            {
+                width: 600,
+                top: 70,
+                left: 0,
+                opacity: 0.8,
+                zIndex: 3,
+            },//1
+            {
+                width: 800,
+                top: 0,
+                left: 200,
+                opacity: 1,
+                zIndex: 4,
+				
+            },//2
+            {
+                width: 600,
+                top: 70,
+                left: 600,
+                opacity: 0.8,
+                zIndex: 3,
+            }
+            
+ 
+        ];
+        //页面加载事件
+        window.onload = function () {
+            var flag = true;//假设所有的动画都执行完毕
+            //图片散开
+            var list = my$("slide").getElementsByTagName("li");
+ 
+            function assign() {
+                for (var i = 0; i < list.length; i++) {
+                    animate(list[i], config[i], function () {
+                        flag = true;
+                    });
+                }
+            }
+ 
+            assign();
+ 
+            //鼠标进入，左右焦点显示
+            my$("slide").onmouseover = function () {
+                animate(my$("arrow"), {"opacity": 1});
+            };
+            //鼠标进入，左右焦点隐藏
+            my$("slide").onmouseout = function () {
+                animate(my$("arrow"), {"opacity": 0});
+            };
+            //左按钮点击事件
+            my$("arrLeft").onclick = function () {
+                if (flag) {
+                    flag = false;
+                    config.unshift(config.pop());
+                    assign();
+                }
+            };
+            //右按钮点击事件
+            my$("arrRight").onclick = function () {
+                if (flag) {
+                    flag = false;
+                    config.push(config.shift());
+                    assign();//重新分配
+                }
+            };
+        };
+    </script>
+ 
+</head>
+<body>
+<div class="wrap" id="wrap">
+    <div class="slide" id="slide">
+        <ul>
+            <li><a href="#"><img src="lb0.png" alt="" style="height:310px"/></a></li>
+            <li><a href="#"><img src="lb1.png" alt="" style="height:310px"/></a></li>
+            <li><a href="#"><img src="solution-list-15.png" alt="" style="height:310px"/></a></li>
+        </ul>
+        <div class="arrow" id="arrow">
+            <a href="javascript:;" class="prev" id="arrLeft"></a>
+            <a href="javascript:;" class="next" id="arrRight"></a>
+        </div>
+    </div>
+</div>
+ 
+</body>
+</html>

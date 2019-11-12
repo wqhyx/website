@@ -1070,13 +1070,24 @@ ul.vertical-images li:hover .button {
 }
 
 #fwlc ul{
-    width: 850px;
+    width: 1000px;
     list-style:none;
     margin: auto;
 }
 
+.newSrcoll{
+    position:fixed !important;
+    top: 63rem !important;
+    background-color: #1B87F4 !important;
+    color:#626262 !important;
+}
+
+.newSrcoll-i{
+    color: white !important;
+}
+
 #fwlc li{
-    width: 120px;
+    width: 140px;
     margin: 5px;
     float: left;
     color:white;
@@ -1161,8 +1172,9 @@ ul.vertical-images li:hover .button {
 }
 
 #abouts{
-    width: 360px;
+    /*width: 360px;*/
     margin: 5rem auto;
+    margin-left:40%;
 }
 
 .otherdescription{
@@ -1172,6 +1184,31 @@ ul.vertical-images li:hover .button {
     color:white;
     font-weight: 6000;
     /* animation: rightEaseInAnimate 2s ease 1; */
+}
+
+.cent-i-t{
+    width: 380px !important;
+}
+
+#our-tt-3 .picture{
+    height:350px;
+    /*background-color: transparent !important;*/
+}
+
+#row-tt-im .picture{
+    height:275px;
+    width: 100%;
+}
+
+#our-tt-3 .icon{
+   /* border:1px solid #1086df;*/
+}
+#our-tt-3 .icon a{
+   /* color:#337ab7 !important;*/
+}
+
+.cent-i-t:hover{
+    background-color:#1086df !important;
 }
 
 #otherdescription1,#otherdescription2,#otherdescription3,#otherdescription4{
@@ -1242,11 +1279,13 @@ ul.vertical-images li:hover .button {
 .lb-t{
     width:500px;
     height: 300px;
+    z-index: 11;
+    filter:contrast(0.4);
 }
 
 #lb-ul {
     list-style: none;
-    margin-left: 15%;
+    margin-left: 11%;
 }
 
 #lb-ul li{
@@ -1271,13 +1310,17 @@ ul.vertical-images li:hover .button {
 .next-img1{
     position: absolute;
     cursor: pointer;
-    margin-left: 2rem;
+    margin-left: -4rem;
     margin-top: 11rem;
+    filter: drop-shadow(2px 4px 6px black);
+    z-index:999;
 }
 .next-img2{
     position: absolute;cursor: pointer;
     margin-left: -15rem;
     margin-top: 10rem;
+    filter: drop-shadow(2px 4px 6px black);
+    z-index:999;
 }
 
 .cen-ttt{
@@ -1311,10 +1354,11 @@ ul.vertical-images li:hover .button {
 }
 
 #other-li{
-    width:720px;
+    width:790px; /*720px*/
     margin-top:-95px;
     position: relative;
     height:420px;
+    filter: none !important;
 }
 
 #navbar ul li a:hover{
@@ -1594,14 +1638,14 @@ ul.vertical-images li:hover .button {
 
 #hzhb-center ul{
     list-style: none;
-    width: 1000px;
+    width: 1070px;
     margin: auto;
 }
 
 #hzhb-center ul li{
     width:180px;
     float: left;
-    margin: 5px;
+    margin: 10px;
     text-align: center;
 }
 
@@ -4174,6 +4218,7 @@ ul.vertical-images li:hover .button {
     color:black;
     text-indent: 2rem;
     margin-bottom: 10px;
+    cursor: default;
 }
 
 .services .block h1 {
@@ -5461,7 +5506,7 @@ textarea.form-control{
     margin-top: 8px;
 }
 .contact-us .our-information .block .details .description {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 300;
     color: #727272;
 }
