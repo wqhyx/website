@@ -24,6 +24,7 @@ var config = [
 ];
 
 var num = 0;
+var listData = ['ITIL运维管理平台','智慧信访应用平台','数据综合治理平台'];
 
 $(function(){
     var flag = true;//假设所有的动画都执行完毕
@@ -54,6 +55,7 @@ $(function(){
             assign();
             num = 0;
         }
+        changeNextMethod(0);
     };
     //右按钮点击事件
     my$("arrRight").onclick = function () {
@@ -63,8 +65,32 @@ $(function(){
             assign();//重新分配
             num = 0;
         }
+        changeNextMethod(1);
     };
 });
+
+//切换内容
+var changeNextMethod = (num) =>{
+    var val = $("#sspans").text();
+    //console.log(val)
+    if(Number(num) === 1){
+        if(val === listData[1]){
+            $("#fspans").text(listData[2]);$("#sspans").text(listData[0]);$("#tspans").text(listData[1]);
+        }else if(val === listData[0]){
+            $("#fspans").text(listData[1]);$("#sspans").text(listData[2]);$("#tspans").text(listData[0]);
+        }else{
+            $("#fspans").text(listData[0]);$("#sspans").text(listData[1]);$("#tspans").text(listData[2]);
+        }
+    }else{
+        if(val === listData[1]){
+            $("#fspans").text(listData[1]);$("#sspans").text(listData[2]);$("#tspans").text(listData[0]);
+        }else if(val === listData[0]){
+            $("#fspans").text(listData[0]);$("#sspans").text(listData[1]);$("#tspans").text(listData[2]);
+        }else{
+            $("#fspans").text(listData[2]);$("#sspans").text(listData[0]);$("#tspans").text(listData[1]);
+        }
+    }
+}
 
 //根据id获取对应的元素
 function my$(id) {
@@ -109,11 +135,10 @@ function animate(element,json,fn) {
                     element.firstChild.firstChild.style.height = "310px";
                     element.firstChild.firstChild.style.filter = "contrast(0.4)";
                 }
-                if(num >= 3){continue};
+                /*if(num >= 3){continue};
                 console.log(element.firstChild.firstChild)
-                num ++;
+                num ++;*/
             }else{//普通的属性
-
                 //获取当前的位置----getAttrValue(element,attr)获取的是字符串类型
                 var current= parseInt(getAttrValue(element,attr))||0;
                 //每次移动多少步
@@ -134,6 +159,5 @@ function animate(element,json,fn) {
             }
         }
         //console.log("target:"+target+"current:"+current+"step:"+step);
-
     },10);
 }
