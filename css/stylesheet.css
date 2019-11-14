@@ -1084,6 +1084,15 @@ ul.vertical-images li:hover .button {
 
 .newSrcoll-i{
     color: white !important;
+    font-weight: bold !important;
+    font-size: 27px !important;
+}
+
+#dituContent{
+    height:500px;
+    width: 500px;
+    border:#ccc solid 1px;
+    float: right;
 }
 
 #fwlc li{

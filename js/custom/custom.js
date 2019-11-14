@@ -632,17 +632,17 @@ var isIphoneMethod =()=>{
         $("#zjbg .container").css("cssText","font-size:2rem !important;color:black;text-align:center;");
         $("#zjbg").css({"height":"100px","line-height":"0"});
         $("#isIponeGrid").css({"padding-bottom":"20px"});
-        $("#isIponeText").css("cssText","font-size:12px;");
+        $("#isIponeText").css({"cssText":"font-size:12px;","text-align":"center"});
         $("#isIphonecontainer").css("cssText","padding-left:0 !important;");
         $("#isIphonemar").css({"margin-left":"0","margin-bottom":"20px"});
-        $("#imgHeight1,#imgHeight2").css({"width":"105%","height":"230px"});
-        $("#otherdescription1, #otherdescription2").css({"left":"0","width":"100%"});
+        $("#imgHeight1,#imgHeight2,#imgHeight3,#imgHeight4").css({"width":"105%","height":"230px"});
+        $("#otherdescription1,#otherdescription2,#otherdescription3,#otherdescription4").css({"left":"0","width":"100%"});
         $("#isIponeFooter").css({"width":"auto"});
         $("#isIponetxt2,#isIponetxt1").css("font-size","35px");
         $(".ztwxCla").css({"margin-left":"0"});$("#ulli-d").css("margin-left","-2rem");
         $("#isIponeFooterOther").css({"padding-top":"30px","padding-bottom":"20px"});
 
-        //首页轮播
+        //首页轮播  旧的
         $("#isPhoneLb").css({"width":"auto","margin-left":"10px","padding-bottom":"0"});
         $("#lb-ul li").css("margin-left","-100px");
         $("#lb-ul li img").css({"height":"100px","width":"180px"});
@@ -717,14 +717,29 @@ var isIphoneMethod =()=>{
         $(".isPhone-t-1 .col-lg-4").eq(0).css("padding-top","0");
         $("#aboutUsSecond .solu-images").css({"width":"327px"});
         $(".panel-group .panel").css("width","300px");
-        $(".istelmd-3").css({"margin-right":"10%","margin-left":"-20%"});
-        $(".istelmd-9").css({"margin-left":"-17%"});
+        $(".istelmd-3").css({"position":"relative","right":"6%"});
+        $(".istelmd-9").css("cssText","position:relative;left:0");
 
         //关于我们详情
         $("#about-us-bg").css("height","150px");
         $("#about-us-bg .cen-ttt .info").css({"padding-top":"30px","padding-bottom":"0"});
         $("#about-us-bg .cen-ttt").css("margin-top","2rem");
         $("#about-us-bg .cen-ttt h2").css("font-size","20px");
+
+        //首页banner + 新闻 + 顶置 // 新
+        $(".slider").css("cssText","height:200px"); $(".tp-revslider-mainul").css("height","200px");
+        $(".phoneThird").css({"margin-left":"0","margin-top":"5%"});
+        $("#imgHeight3,#imgHeight4").css({"margin-top":"5%"});
+        $(".what-we-offer-02 .block .description").css({"width":"90%","margin-left":"5%"});
+        $("#abouts").css({"margin-left":"2%"});
+        $("#our-tt-3 .picture,#row-tt-im .picture").css({"height":"auto"});
+        $("#dituContentii").css({"padding-right":"0"});
+        $(".totop").css("cssText","display:none !important");
+        $("#istelorcontainer").css({"width":"auto"});
+        $(".istt-re").css({"left":"0"});$(".us-01-test").css({"top":"0"});
+        $(".prev, .next").css({"zoom":"0.7","top":"27%"});
+        $("#arrRight").css({"left":"88%"});
+        $("#wrap").css({"width":"100%","height":"230px"});
 
     }else{ console.log('不是的咯===>'); }
 }

@@ -23,8 +23,79 @@ var config = [
     }
 ];
 
+function isTel (){
+    var ua = navigator.userAgent;
+    var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+        isIphone =!ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+        isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+        isMobile = isIphone || isAndroid;
+    return isMobile;
+}
+
+var txt = '<div class="star" style="top: 80px; left: 800px; animation-delay: 2s;"></div>\n' +
+    '\t\t\t\t<div class="star" style="top: 40px; left: 646px; animation-delay: 3s;"></div>\n' +
+    '\t\t\t\t<div class="star" style="top: 120px; left: 395px; animation-delay: 4s;"></div>\n' +
+    '\t\t\t\t<div class="star" style="top: 160px; left: 765px; animation-delay: 1s;"></div>\n' +
+    '\t\t\t\t<div class="star" style="top: 170px; left: 1200px; animation-delay: 2s;"></div>\n' +
+    '\t\t\t\t<div class="star" style="top: 200px; left: 1000px; animation-delay: 2s;"></div>\n' +
+    '\t\t\t\t<div class="star" style="top: 160px; left: 755px; animation-delay: 1s;"></div>\n' +
+    '\t\t\t\t<div class="star" style="top: 170px; left: 1020px; animation-delay: 2s;"></div>\n' +
+    '\t\t\t\t<div class="star" style="top: 100px; left: 320px; animation-delay: 1s;"></div>\n' +
+    '\t\t\t\t<div class="star" style="top: 210px; left: 1120px; animation-delay: 1s;"></div>\n' +
+    '\t\t\t\t<div class="star" style="top: 160px; left: 355px; animation-delay: 4s;"></div>\n' +
+    '\t\t\t\t<div class="star" style="top: 32px; left: 1100px; animation-delay: 2s;"></div>\n' +
+    '\t\t\t\t<div class="star" style="top: 21px; left: 100px; animation-delay: 1s;"></div>\n' +
+    '\t\t\t\t<div class="star" style="top: 210px; left: 1120px; animation-delay: 1s;"></div>\n' +
+    '\t\t\t\t<div class="star" style="top: 160px; left: 655px; animation-delay: 1s;"></div>\n' +
+    '\t\t\t\t<div class="star" style="top: 42px; left: 1140px; animation-delay: 2s;"></div>\n' +
+    '\t\t\t\t<div class="star" style="top: 52px; left: 320px; animation-delay: 1s;"></div>\n' +
+    '\t\t\t\t<div class="star" style="top: 160px; left: 555px; animation-delay: 3s;"></div>\n' +
+    '\t\t\t\t<div class="star" style="top: 22px; left: 110px; animation-delay: 2s;"></div>\n' +
+    '\t\t\t\t<div class="star" style="top: 222px; left: 320px; animation-delay: 3s;"></div>';
+$("#lzStar").html(txt);
+if(isTel()){
+    config = [
+        {
+            width: 220,
+            top: 30,
+            left: 0,
+            opacity: 0.8,
+            zIndex: 3,
+        },//1
+        {
+            width: 280,
+            top: 20,
+            left: 55,
+            opacity: 1,
+            zIndex: 4,
+
+        },//2
+        {
+            width: 220,
+            top: 30,
+            left: 150,
+            opacity: 0.8,
+            zIndex: 3,
+        }
+    ];
+    txt = '<div class="star" style="top: 80px; left: 100px; animation-delay: 2s;"></div>\n' +
+        '\t\t\t\t<div class="star" style="top: 40px; left: 136px; animation-delay: 3s;"></div>\n' +
+        '\t\t\t\t<div class="star" style="top: 120px; left: 205px; animation-delay: 4s;"></div>\n' +
+        '\t\t\t\t<div class="star" style="top: 160px; left: 165px; animation-delay: 1s;"></div>\n' +
+        '\t\t\t\t<div class="star" style="top: 160px; left: 155px; animation-delay: 1s;"></div>\n' +
+        '\t\t\t\t<div class="star" style="top: 100px; left: 110px; animation-delay: 1s;"></div>\n' +
+        '\t\t\t\t<div class="star" style="top: 160px; left: 200px; animation-delay: 4s;"></div>\n' +
+        '\t\t\t\t<div class="star" style="top: 21px; left: 100px; animation-delay: 1s;"></div>\n' +
+        '\t\t\t\t<div class="star" style="top: 160px; left: 215px; animation-delay: 1s;"></div>\n' +
+        '\t\t\t\t<div class="star" style="top: 52px; left: 120px; animation-delay: 1s;"></div>\n' +
+        '\t\t\t\t<div class="star" style="top: 160px; left: 125px; animation-delay: 3s;"></div>\n' +
+        '\t\t\t\t<div class="star" style="top: 22px; left: 110px; animation-delay: 2s;"></div>\n' +
+        '\t\t\t\t<div class="star" style="top: 122px; left: 120px; animation-delay: 3s;"></div>';
+    $("#lzStar").html(txt)
+}
+
 var num = 0;
-var listData = ['ITIL运维管理平台','智慧信访应用平台','数据综合治理平台'];
+var listData = ['ITIL运维管理平台','智慧信访应用平台','大数据治理平台'];
 
 $(function(){
     var flag = true;//假设所有的动画都执行完毕
@@ -129,11 +200,21 @@ function animate(element,json,fn) {
             }else if(attr=="zIndex"){//判断属性是不是zIndex
                 element.style[attr]=json[attr];
                 if(Number(element.style[attr])==4){
-                    element.firstChild.firstChild.style.height = "410px";
                     element.firstChild.firstChild.style.filter = "none";
+                    if(isTel()){
+                        element.firstChild.firstChild.style.height = "170px";
+                        element.firstChild.firstChild.style.width = "250px";
+                    }else{
+                        element.firstChild.firstChild.style.height = "410px";
+                    }
                 }else{
-                    element.firstChild.firstChild.style.height = "310px";
                     element.firstChild.firstChild.style.filter = "contrast(0.4)";
+                    if(isTel()){
+                        element.firstChild.firstChild.style.height = "150px";
+                        element.firstChild.firstChild.style.width = "220px";
+                    }else{
+                        element.firstChild.firstChild.style.height = "310px";
+                    }
                 }
                 /*if(num >= 3){continue};
                 console.log(element.firstChild.firstChild)
