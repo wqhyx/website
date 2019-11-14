@@ -655,7 +655,8 @@ var isIphoneMethod =()=>{
         //新闻 AND 详情
         $(".isIphoneImgNews").css("width","100%");
         $(".isIpsidebar").css("padding-bottom","15px");
-        $(".isIphoneNewXQ").css({"float":"right","position":"absolute","width":"245px","margin-top":"0","right":"0","top":"4rem"})
+        $(".isIphoneNewXQ").css({"float":"right","position":"absolute","width":"245px","margin-top":"0","right":"20px"});
+        $(".newss-timess").css({"margin-right":"0"});
         $("#news-bg").css("height","150px");
         $("#news-bg .cen-ttt .info").css({"padding-top":"30px","padding-bottom":"0"});
         $("#news-bg .cen-ttt").css("margin-top","2rem");
@@ -740,6 +741,8 @@ var isIphoneMethod =()=>{
         $(".prev, .next").css({"zoom":"0.7","top":"27%"});
         $("#arrRight").css({"left":"88%"});
         $("#wrap").css({"width":"100%","height":"230px"});
+        $(".newsListProduct").css({"margin-left":"0","text-align":"center"});
+        $(".other-newss-timess,.others-newss-timess").css({"top":"4rem"});
 
     }else{ console.log('不是的咯===>'); }
 }
