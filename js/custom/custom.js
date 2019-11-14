@@ -698,7 +698,7 @@ var isIphoneMethod =()=>{
         $("#solution-bg .cen-ttt").css("margin-top","2rem");
         $("#solution-bg .cen-ttt h2").css("font-size","16px");
         $(".isPhonehome-04").css({"padding-top":"20px","padding-bottom":"20px"});
-        $(".isPhonehome-04 .solu-images").css({"width":"326px"});
+        $(".isPhonehome-04 .solu-images").css({"width":"100%"});
         $(".isPhone-why-to").css({"padding-top":"30px"});
         $(".isPhone-t-1").css({"padding-top":"0"});
         $(".isPhone-t-1 .col-lg-6").css({"top":"0"});
