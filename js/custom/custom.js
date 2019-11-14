@@ -647,7 +647,7 @@ var isIphoneMethod =()=>{
         $("#lb-ul li").css("margin-left","-100px");
         $("#lb-ul li img").css({"height":"100px","width":"180px"});
         $("#other-li").css({"height":"120px","margin-top":"-15px"});
-        $(".isphonedescription").css("padding-bottom","0");
+        $(".isphonedescription").css({"padding-bottom":"0","line-height":"3rem"});
         $(".next-img1").css({"margin-left":"0","margin-top":"3rem","width":"50px"});
         $(".next-img2").css({"margin-left":"-5rem","margin-top":"2rem","width":"50px"});
         $(".isphone-bb").css({"padding-bottom":"10px"});
@@ -696,18 +696,21 @@ var isIphoneMethod =()=>{
         $("#solution-bg").css("height","150px");
         $("#solution-bg .cen-ttt .info").css({"padding-top":"30px","padding-bottom":"0"});
         $("#solution-bg .cen-ttt").css("margin-top","2rem");
-        $("#solution-bg .cen-ttt h2").css("font-size","16px");
+        $("#solution-bg .cen-ttt h2").css("font-size","15px");
         $(".isPhonehome-04").css({"padding-top":"20px","padding-bottom":"20px"});
         $(".isPhonehome-04 .solu-images").css({"width":"100%"});
         $(".isPhone-why-to").css({"padding-top":"30px"});
         $(".isPhone-t-1").css({"padding-top":"0"});
         $(".isPhone-t-1 .col-lg-6").css({"top":"0"});
         //$("#fwlc").css({"height":"520px","margin-left":"-10%"});
-        $(".fwlcNew2").css({"height":"520px","margin-left":"-10%"});
+        $(".fwlcNew2").css({"height":"520px"/*,"margin-left":"-10%"*/});
+        $("#fwlc ul li").css("cssText","margin-left:0 !important")
         $("#fwlc ul li").eq(2).css({"margin-top":"30px"});
         $("#fwlc ul li").eq(3).css({"margin-top":"30px"});
+        $("#fwlc ul li").eq(6).css({"margin-bottom":"30px"});
         $(".phoneIsSo").css("left","20px");
-        $(".phoneIsSo .col-lg-2").css({"width":"180px","float":"left"})
+        $(".phoneIsSo .col-lg-2").css({"width":"180px","float":"left"});
+        $(".isLLhome-03").css({"margin-left":"5px"});
 
         //关于我们
         $("#about-bg").css("height","150px");
@@ -716,7 +719,7 @@ var isIphoneMethod =()=>{
         $("#about-bg .cen-ttt h2").css("font-size","20px");
         $(".isPhone-t-1 .col-lg-4").css("padding-top","180px");
         $(".isPhone-t-1 .col-lg-4").eq(0).css("padding-top","0");
-        $("#aboutUsSecond .solu-images").css({"width":"327px"});
+        $("#aboutUsSecond .solu-images").css({"width":"100%"});
         $(".panel-group .panel").css("width","300px");
         $(".istelmd-3").css({"position":"relative","right":"6%"});
         $(".istelmd-9").css("cssText","position:relative;left:0");
@@ -732,9 +735,11 @@ var isIphoneMethod =()=>{
         $(".phoneThird").css({"margin-left":"0","margin-top":"5%"});
         $("#imgHeight3,#imgHeight4").css({"margin-top":"5%"});
         $(".what-we-offer-02 .block .description").css({"width":"90%","margin-left":"5%"});
-        $("#abouts").css({"margin-left":"2%"});
+        $("#abouts").css({"margin-left":"0","width":"100%"});
+        $("#abouts .about-title").css({"width":"33%"});
         $("#our-tt-3 .picture,#row-tt-im .picture").css({"height":"auto"});
         $("#dituContentii").css({"padding-right":"0"});
+        $("#dituContent").css({"width":"100%","margin-right":"2%"});
         $(".totop").css("cssText","display:none !important");
         $("#istelorcontainer").css({"width":"auto"});
         $(".istt-re").css({"left":"0"});$(".us-01-test").css({"top":"0"});
