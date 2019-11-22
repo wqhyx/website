@@ -36,7 +36,7 @@ map.addControl(ctrl_sca);
 }
 
 //标注点数组
-var markerArr = [{title:"武汉中天网信科技有限公司",content:"湖北省武汉市江汉区江汉区武汉天街创富时代5栋19层",point:"114.265111|30.617579",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+var markerArr = [{title:"武汉中天网信科技有限公司",content:"湖北省武汉市江汉区武汉天街创富时代5栋19层",point:"114.265111|30.617579",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
      ];
 //创建marker
 function addMarker(){
